@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="237.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cuadradosmedios.HelloApplication">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Número inicial:"/>
+    <TextField fx:id="initialNumberField"/>
+
+    <Label text="Número de dígitos:"/>
+    <TextField fx:id="numberOfDigitsField"/>
+
+    <Label text="Cantidad de números aleatorios:"/>
+    <TextField fx:id="numberOfRandomNumbersField"/>
+
+    <Label fx:id="resultLabel" text=""/>
+
+    <!-- Botón para generar números pseudoaleatorios -->
+    <Button text="Generar" onAction="#generateRandomNumbers"/>
+</VBox>
